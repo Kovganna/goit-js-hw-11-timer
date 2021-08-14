@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.field {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    height: 300px;
+    width: 200px;
+    text-align: center;
+    font-size: calc(5vw + 9em);
+    background-color: #000;
+    padding: 0 0.125em;
+    border: 2px solid tomato;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  @media screen and (min-width: 360px) {
+      .field {
+        font-size: 16px;
+      }
+    }
+  
+  .field:not(:first-child) {
+      margin-left: 50px;
+  }
+
+  .field > .value {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+
+.value {
+    right: 50%;
+    font-family: 'Prompt', sans-serif;
+    font-style: 900;
+    font-size: 100px;
+    color: #fff;
+}
+
+.label {
+    
+    /* font-family: 'Source Code Pro', monospace;
+    font-style: 400;
+    font-size: 16px;
+    color: cadetblue; */
+
+}
+
+.timer {
+    padding: 0;
+    margin: 0;
+    align-items: baseline;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
