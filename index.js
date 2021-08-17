@@ -76,3 +76,5 @@ const timer = new CountdownTimer({
   targetDate: new Date('Jan 01, 2022 00:00'),
   // targetDate: new Date('Aug 15, 2021 18:38'),
 });
+
+timer.start();
